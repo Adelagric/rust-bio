@@ -3,6 +3,25 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [4.0.0](https://github.com/rust-bio/rust-bio/compare/v3.0.0...v4.0.0) (2026-05-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* for pairwise alignment, only apply gap_extend penalty for each extension of a gap beyond length 1, not upon gap opening ([#660](https://github.com/rust-bio/rust-bio/issues/660))
+
+### Bug Fixes
+
+* fix compiler warnings ([#661](https://github.com/rust-bio/rust-bio/issues/661)) ([8c9013a](https://github.com/rust-bio/rust-bio/commit/8c9013a1ac8794c35dd08a78fecb2cf3d19d023c))
+* **fmindex:** avoid usize underflow on backward_search for lex-smallest symbol ([#663](https://github.com/rust-bio/rust-bio/issues/663)) ([79dc5d1](https://github.com/rust-bio/rust-bio/commit/79dc5d107fe6cdb1223e857f325e02af8dae72fa))
+* for pairwise alignment, only apply gap_extend penalty for each extension of a gap beyond length 1, not upon gap opening ([#660](https://github.com/rust-bio/rust-bio/issues/660)) ([51e3d29](https://github.com/rust-bio/rust-bio/commit/51e3d295f9d4ffc8fbd09d2b982dde1069800b24)), closes [#656](https://github.com/rust-bio/rust-bio/issues/656)
+
+
+### Dependencies
+
+* update bit-set requirement from 0.8 to 0.10 ([#658](https://github.com/rust-bio/rust-bio/issues/658)) ([2996eae](https://github.com/rust-bio/rust-bio/commit/2996eae3f8264e08abab06db849e44b4611c52f5))
+* update rand requirement from 0.9.0 to 0.10.1 ([#659](https://github.com/rust-bio/rust-bio/issues/659)) ([30244e2](https://github.com/rust-bio/rust-bio/commit/30244e2759ddfb3cc3287d9fa287e9b34884b2ad))
+
 ## [3.0.0](https://github.com/rust-bio/rust-bio/compare/v2.3.0...v3.0.0) (2025-09-19)
 
 
